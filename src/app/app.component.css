@@ -1,0 +1,32 @@
+.lista{
+   text-align: center; 
+}
+/* #tabela{
+    display: none;
+}
+.flecha{
+    font-size: 20px;
+    cursor: pointer;
+    animation: blink 1s steps(5, start) infinite;
+}
+@keyframes blink {
+    to{
+        visibility: hidden;
+    }
+}
+.rotate{
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+.ativar {
+    display: block !important;
+
+} */
+footer {
+    font-size: 10px;
+    font-family: sans-serif;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+}
