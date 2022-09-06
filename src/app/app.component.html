@@ -1,14 +1,52 @@
-<header>
-    Alguém faz o Header por favor
-    <h1>Biblioteca Gama</h1>
-</header>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<header id="header">
+    
+    <div class="container">
+      <div id="logo" class="pull-left"> 
+        <img class="logoCog" src="https://logosmarcas.net/wp-content/uploads/2022/05/Cognizant-Logo.png" alt="logoCog"/>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
+        
+        <div id="logo" class="pull-right">
+            <h1><a href="#intro" class="scrollto">Cognizant Library</a></h1>  
+            <br>
+            <h6><a>Grupo 3</a></h6>   
+        </div>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"target="_blank"><a href="">Home</a></li>
+          <li><a href="https://www.cognizant.com/us/en/about-cognizant/diversity-and-inclusion"target="_blank">About Us</a></li>
+          <li><a href=""target="_blank">Login</a></li>
+          <li><a href=""target="_blank">Registar</a></li>
+          
+          <!-- <li><a href="">Contact</a></li> -->
+        </ul>
+      </nav><!-- #nav-menu-container -->
+
+    </div>
+  </header><!-- #header -->
+
+ <br> <br> <br> <br> <br> <br> <br> <br>
+
+ 
 <main>
+   
     <router-outlet name="adicionar"></router-outlet>
      <!--<div class="adicionar" id="adicionaLivro">
         <form action="#" method="post">
             <fieldset>
-                <legend>Adicionar livro</legend>
+                <legend><h1>Adicionar livro<h1> </legend>
                 <span for="nomeLivro" id="labelNome">Nome:</span>
                 <input type="text" id="nomeLivro" name="nome">
                 <br>
@@ -57,14 +95,38 @@
             <tfoot>Total de livros: </tfoot>
         </table> -->
     </div>
-    <footer>&copy; Grupo 3</footer>
-
-</main>
-<!-- <script>
-    function displayLista() {
-        var seta = document.getElementById("arrow");
-        seta.classList.toggle("rotate");
-        var display = document.getElementById("about");
-        display.classList.toggle("ativar");
-    }
-</script> -->
+  </main>
+  <!-- <script>
+      function displayLista() {
+          var seta = document.getElementById("arrow");
+          seta.classList.toggle("rotate");
+          var display = document.getElementById("about");
+          display.classList.toggle("ativar");
+      }
+  </script> -->
+    <!-- Footer -->
+	<section id="footer">
+		<div class="container">
+			<div class="row text-center text-xs-center text-sm-left text-md-left">
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Links rápidos</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="http://localhost:4200/"><i class="fa fa-angle-double-right"target="_blank"></i>Home</a></li>
+						<li><a href="https://www.cognizant.com/us/en/about-cognizant/diversity-and-inclusion"target="_blank"><i class="fa fa-angle-double-right"></i>Sobre</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+					<ul class="list-unstyled list-inline social text-center">
+						<li class="list-inline-item"><a href="https://www.facebook.com/Cognizant/"target="_blank"><i class="fa fa-facebook"></i></a></li>
+						<li class="list-inline-item"><a href="https://twitter.com/cognizant"target="_blank"><i class="fa fa-twitter"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.instagram.com/cognizant/"target="_blank"><i class="fa fa-instagram"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.cognizant.com/us/en/about-cognizant/contact-us"target="_blank"><i class="fa fa-envelope"></i></a></li>
+					</ul>
+				</div>
+				<hr>
+			</div>	
+		</div>
+	</section>
+	<!-- ./Footer -->
