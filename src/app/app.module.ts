@@ -8,6 +8,7 @@ import { ExcluirLivroComponent } from './excluir-livro/excluir-livro.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AdicionarLivroComponent } from './adicionar-livro/adicionar-livro.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,9 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule, 
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

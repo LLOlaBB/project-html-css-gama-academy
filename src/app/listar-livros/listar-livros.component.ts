@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
 import { Livros } from '../livros';
 import { LivrosService } from '../livros.service';
+
 
 @Component({
   selector: 'app-listar-livros',
@@ -11,7 +13,7 @@ export class ListarLivrosComponent implements OnInit {
 
   livros: Livros[] = [];
 
-  constructor(private service: LivrosService) {}
+  constructor(private service: LivrosService, private router:Router, private route:ActivatedRoute) {}
 
 
 
@@ -42,5 +44,9 @@ export class ListarLivrosComponent implements OnInit {
     //   "editora": "teste editora3"
     // }
   //]
+
+  onEdit(id: any){
+    this.router.navigate(['editar-livro', id]);
+  }
 
 }

@@ -16,9 +16,9 @@
             <td>{{livro.descr}}</td>
             <td>{{livro.autor}}</td>
             <td>{{livro.editora}}</td>
-            <td><button aria-label="Editar" routerLink="/editar-livro/{{livro.id}}"><i
+            <td><button aria-label="Editar" (click)="onEdit(livro.id)"><i
                         class="fa-solid fa-pen-to-square"></i></button>&nbsp;&nbsp;&nbsp;&nbsp;<button
-                    aria-label="Deletar" routerLink="/excluir-livro/{{livro.id}}"><i class="fa-solid fa-trash"></i></button></td>
+                    aria-label="Deletar" ><i class="fa-solid fa-trash"></i></button></td>
         </tr>
     </tbody>
     <tfoot>Total de livros: </tfoot>
