@@ -1,0 +1,25 @@
+<table id="tabela" class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Titulo</th>
+            <th scope="col">Descrição</th>
+            <th scope="col">Autor</th>
+            <th scope="col">Editora</th>
+            <th scope="col">Opções</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let livro of livros">
+            <td>{{livro.id}}</td>
+            <td>{{livro.titulo}}</td>
+            <td>{{livro.descr}}</td>
+            <td>{{livro.autor}}</td>
+            <td>{{livro.editora}}</td>
+            <td><button aria-label="Editar" routerLink="/editar-livro/{{livro.id}}"><i
+                        class="fa-solid fa-pen-to-square"></i></button>&nbsp;&nbsp;&nbsp;&nbsp;<button
+                    aria-label="Deletar" routerLink="/excluir-livro/{{livro.id}}"><i class="fa-solid fa-trash"></i></button></td>
+        </tr>
+    </tbody>
+    <tfoot>Total de livros: </tfoot>
+</table>
