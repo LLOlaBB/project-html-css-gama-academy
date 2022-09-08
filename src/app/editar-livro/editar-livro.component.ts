@@ -43,7 +43,7 @@ export class EditarLivroComponent implements OnInit {
   onEditar(id: number) {
     
     this.service.update(id, this.form.value).subscribe();
-      // window.location.reload();
+    //window.location.reload();
   }
 
   onCancel() {
