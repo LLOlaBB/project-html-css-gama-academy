@@ -1,5 +1,5 @@
 <div class="adicionar" id="adicionaLivro">
-    <form action="#" method="post">
+    <form [formGroup]="form">
 
         <legend>Editar livro</legend>
         <table id="tabela" class="table table-striped table-bordered">
@@ -9,22 +9,25 @@
                     <th scope="col">Descrição</th>
                     <th scope="col">Autor</th>
                     <th scope="col">Editora</th>
-                    <th scope="col">Opções</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td><input type="text" id="nomeLivro" name="nome"></td>
-                    <td><input type="text" id="descrLivro" name="descricao"></td>
-                    <td><input type="text" id="autorLivro" name="autor"></td>
-                    <td><input type="text" id="editoraLivro" name="editora"></td>
-                    <td>
-                        <button routerLink="/"><i class="fa-solid fa-check"></i></button>
-                        <button routerLink="/"><i class="fa-solid fa-x"></i></button>
-                    </td>
+                    <td><input type="text" id="titulo" name="titulo" formControlName="titulo"></td>
+                    <td><input type="text" id="descr" name="descr" formControlName="descr"></td>
+                    <td><input type="text" id="autor" name="autor" formControlName="autor"></td>
+                    <td><input type="text" id="editora" name="editora" formControlName="editora"></td>
+                    
                 </tr>
             </tbody>
-            <tfoot>Total de livros: </tfoot>
+            <tfoot>
+                <tr>
+                    <td colspan="4">Confirmar Edição <br>
+                        <button type="submit" (click)="onEditar(emEdicao.id)" routerLink="/"><i
+                                class="fa-solid fa-check"></i></button>&nbsp;
+                        <button routerLink="/"><i class="fa-solid fa-x"></i></button></td>
+                </tr>
+            </tfoot>
         </table>
     </form>
 </div>

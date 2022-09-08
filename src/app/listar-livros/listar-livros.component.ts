@@ -12,6 +12,7 @@ import { LivrosService } from '../livros.service';
 export class ListarLivrosComponent implements OnInit {
 
   livros: Livros[] = [];
+  tamanho: number | undefined;
 
   constructor(private service: LivrosService, private router:Router, private route:ActivatedRoute) {}
 
@@ -46,7 +47,11 @@ export class ListarLivrosComponent implements OnInit {
   //]
 
   onEdit(id: any){
-    this.router.navigate(['editar-livro', id]);
+    this.router.navigate(['editar-livro', id],{relativeTo:this.route});
   }
 
+  onDelete(id: any){
+    this.router.navigate(['excluir-livro', id],{relativeTo:this.route});
+  }
+  
 }

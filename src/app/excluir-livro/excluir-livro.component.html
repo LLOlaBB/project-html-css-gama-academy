@@ -9,22 +9,23 @@
                     <th scope="col">Descrição</th>
                     <th scope="col">Autor</th>
                     <th scope="col">Editora</th>
-                    <th scope="col">Opções</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td><input type="text" id="nomeLivro" name="nome"></td>
-                    <td><input type="text" id="descrLivro" name="descricao"></td>
-                    <td><input type="text" id="autorLivro" name="autor"></td>
-                    <td><input type="text" id="editoraLivro" name="editora"></td>
-                    <td>
-                        <button routerLink="/"><i class="fa-solid fa-trash"></i></button>
-                        <button routerLink="/"><i class="fa-solid fa-x"></i></button>
-                    </td>
+                    <td><input readonly type="text" id="tituloLivro" name="titulo" value="{{emEdicao.titulo}}"></td>
+                    <td><input readonly type="text" id="descrLivro" name="descr" value="{{emEdicao.descr}}"></td>
+                    <td><input readonly type="text" id="autorLivro" name="autor" value="{{emEdicao.autor}}"></td>
+                    <td><input readonly type="text" id="editoraLivro" name="editora" value="{{emEdicao.editora}}"></td>
                 </tr>
             </tbody>
-            <tfoot>Total de livros: </tfoot>
+            <tfoot>
+                <tr>
+                <td colspan="4">Tem certeza que deseja deletar?<br>
+                    <button (click)="onDelete(emEdicao.id)" routerLink="/"><i class="fa-solid fa-trash"></i></button>&nbsp;
+                        <button routerLink="/"><i class="fa-solid fa-x"></i></button></td>
+                </tr>
+            </tfoot>
         </table>
     </form>
 </div>

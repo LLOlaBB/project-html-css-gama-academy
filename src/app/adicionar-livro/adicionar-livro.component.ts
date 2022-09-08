@@ -20,7 +20,7 @@ export class AdicionarLivroComponent implements OnInit {
 
   ngOnInit() {
     this.form = this.fb.group({
-      titulo: [null,[Validators.required, Validators.minLength(3), Validators.maxLength(250)]],
+      titulo: [null],
       descr: [null],
       autor: [null],
       editora: [null]
@@ -31,10 +31,13 @@ export class AdicionarLivroComponent implements OnInit {
     if(this.form.valid){
       console.log(this.form.value)
       this.service.create(this.form.value).subscribe();
+      this.form.reset();
+      window.location.reload();
     }
   }
 
   onCancel(){
+    this.form.reset();
 
   }
 

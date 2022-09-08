@@ -17,9 +17,12 @@
             <td>{{livro.autor}}</td>
             <td>{{livro.editora}}</td>
             <td><button aria-label="Editar" (click)="onEdit(livro.id)"><i
-                        class="fa-solid fa-pen-to-square"></i></button>&nbsp;&nbsp;&nbsp;&nbsp;<button
-                    aria-label="Deletar" ><i class="fa-solid fa-trash"></i></button></td>
+                        class="fa-solid fa-pen-to-square"></i></button>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <button
+                    aria-label="Deletar" (click)="onDelete(livro.id)"><i class="fa-solid fa-trash"></i></button></td>
         </tr>
     </tbody>
-    <tfoot>Total de livros: </tfoot>
+    <tfoot>
+        <tr><td colspan="6">Total de livros:</td></tr>
+         </tfoot>
 </table>
