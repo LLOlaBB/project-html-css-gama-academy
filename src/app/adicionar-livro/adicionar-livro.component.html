@@ -1,21 +1,20 @@
 <div class="adicionar" id="adicionaLivro">
-    <form [formGroup]="form">
+    <form action="#" method="post">
         <fieldset>
-            <legend>Adicionar livro</legend>
-            <label for="tituloLivro" id="labelTitulo">Titulo:</label>
-            <input type="text" id="tituloLivro" name="titulo" placeholder="Titulo do Livro" formControlName="titulo">
-            <br>
-            <label for="descrLivro" id="labelDescr">Descrição:</label>
-            <input type="text" id="descrLivro" name="descricao" placeholder="Descrição do Livro" formControlName="descr">
-            <br>
-            <label for="autorLivro" id="labelAutor">Autor:</label>
-            <input type="text" id="autorLivro" name="autor" placeholder="Autor do Livro" formControlName="autor">
-            <br>
-            <label for="editoraLivro" id="labelEditora">Editora:</label>
-            <input type="text" id="editoraLivro" name="editora" placeholder="Editora do Livro" formControlName="editora">
-            <br>
-            <button type="submit" (click)="onSubmit()">Adicionar Livro</button>
-            <button type="button" (click)="onCancel()">Cancelar</button>
+                <ul><legend><h2>ADICONAR LIVRO</h2></legend>
+            <label for="nomeLivro" id="labelNome">Nome:</label>
+            <input type="text" id="nomeLivro" name="nome">
+            <br></ul>
+            <ul><label for="autorLivro" id="labelAutor">Autor:</label>
+            <input type="text" id="autorLivro" name="autor">
+            <br></ul>
+            <ul><label for="editoraLivro" id="labelEditora">Editora:</label>
+            <input type="text" id="editoraLivro" name="editora">
+            <br></ul>
+            <ul><label for="nomeLivro" id="labelDescr">Descrição:</label>
+            <input type="text" id="nomeLivro" name="descricao">
+            <br></ul>
+            <input type="button" value="Adicionar Livro">
         </fieldset>
     </form> 
 </div>
