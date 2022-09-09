@@ -1,12 +1,12 @@
 <div class="adicionar" id="adicionaLivro">
     <form [formGroup]="form">
 
-        <legend>Editar livro</legend>
+        <legend>editar livro:</legend>
         <table id="tabela" class="table table-striped table-bordered">
             <thead>
                 <tr>
                     <th scope="col">Titulo</th>
-                    <th scope="col">DescriÃ§Ã£o</th>
+                    <th scope="col">Descrição</th>
                     <th scope="col">Autor</th>
                     <th scope="col">Editora</th>
                 </tr>
@@ -22,10 +22,10 @@
             </tbody>
             <tfoot>
                 <tr>
-                    <td colspan="4">Confirmar EdiÃ§Ã£o <br>
+                    <td  class='subtitulo' colspan="4">confirmar edição: <br>
                         <button type="submit" (click)="onEditar(emEdicao.id)" routerLink="/"><i
                                 class="fa-solid fa-check"></i></button>&nbsp;
-                        <button routerLink="/"><i class="fa-solid fa-x"></i></button></td>
+                        <button routerLink="/" class="btn-deletar"><i class="fa-solid fa-x"></i></button></td>
                 </tr>
             </tfoot>
         </table>

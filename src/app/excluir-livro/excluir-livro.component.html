@@ -6,7 +6,7 @@
             <thead>
                 <tr>
                     <th scope="col">Titulo</th>
-                    <th scope="col">DescriÃ§Ã£o</th>
+                    <th scope="col">Descrição</th>
                     <th scope="col">Autor</th>
                     <th scope="col">Editora</th>
                 </tr>
@@ -21,9 +21,9 @@
             </tbody>
             <tfoot>
                 <tr>
-                <td colspan="4">Tem certeza que deseja deletar?<br>
+                <td colspan="4" class="subtitulo">Tem certeza que deseja deletar?<br>
                     <button (click)="onDelete(emEdicao.id)" routerLink="/"><i class="fa-solid fa-trash"></i></button>&nbsp;
-                        <button routerLink="/"><i class="fa-solid fa-x"></i></button></td>
+                        <button routerLink="/" class="btn-deletar"><i class="fa-solid fa-x"></i></button></td>
                 </tr>
             </tfoot>
         </table>

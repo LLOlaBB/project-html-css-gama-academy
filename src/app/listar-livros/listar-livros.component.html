@@ -3,7 +3,7 @@
         <tr>
             <th scope="col">ID</th>
             <th scope="col">Titulo</th>
-            <th scope="col">DescriÃ§Ã£o</th>
+            <th scope="col">Descrição</th>
             <th scope="col">Autor</th>
             <th scope="col">Editora</th>
             <th scope="col">Opções</th>
@@ -17,12 +17,12 @@
             <td>{{livro.autor}}</td>
             <td>{{livro.editora}}</td>
             <td><button aria-label="Editar" (click)="onEdit(livro.id)"><i
-                        class="fa-solid fa-pen-to-square"></i></button>&nbsp;&nbsp;&nbsp;&nbsp;
+                        class="fa-solid fa-pen-to-square btn-editar"></i></button>&nbsp;&nbsp;&nbsp;&nbsp;
                         <button
-                    aria-label="Deletar" (click)="onDelete(livro.id)"><i class="fa-solid fa-trash"></i></button></td>
+                    aria-label="Deletar" (click)="onDelete(livro.id)"><i class="fa-solid fa-trash btn-deletar"></i></button></td>
         </tr>
     </tbody>
-    <tfoot>
+    <!-- <tfoot>
         <tr><td colspan="6">Total de livros:</td></tr>
-         </tfoot>
+         </tfoot> -->
 </table>

@@ -1,4 +1,62 @@
-.adicionar {
+fieldset {
+    width: 50%;
+    margin: 0 auto;
+    padding: 1em;
+    display: flex;
+    flex-direction: column; 
+}
+
+legend {
     text-align: center;
+    font-family: var(--fonte-principal);
+    font-size: 47px;
+    color: var(--azul-escuro);
+    font-weight: 700;
+    border-bottom: none;
+}
+
+label {
+    font-family: var(--fonte-principal);
+    font-size: 20px;
+    color: var(--azul-claro);
+}
+
+input {
+    width: 100%;
+    padding: 20px 10px 20px 20px;
+    border-radius: 0.5em;
+    background-color: var(--cinza);
+    border: none;
+    border-bottom: 1px solid #d0d0ce;
+    font-size: 20px;
+    color: var(--azul-escuro);
+}
+
+input::placeholder {
+    font-family: var(--fonte-principal);
+    font-size: 15px;
+    color: var(--azul-claro);
+}
+
+.botoes {
+    display: flex;
+    margin: 0 auto;
+}
+
+button {
+    width: 10em;
+    margin: 1em;
+    padding: 0.75em 1.25em;
+    background-color: var(--verde-agua);
+    color: var(--azul-escuro);
+    font-size: 2em;
+    font-weight: bold;
+    border: none;
+    border-radius: 500em;
+    filter: drop-shadow(16px 16px 10px rgba(0, 0, 0, 0.25));
+} 
+
+.btn-cancelar {
+    background-color: var(--btn-cancelar);
 }
 

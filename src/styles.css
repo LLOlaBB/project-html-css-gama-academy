@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+    --azul-claro: #2f78c4;
+    --azul-escuro: #000048;
+    --btn-azul: #6AA2DC;
+    --btn-cancelar: #92bbe6;
+    --verde-agua: #26EFE9;
+    --cinza: #f5f5f2;
+    --cinza-claro: #e8e8e6;
+    --cinza-escuro: #53565a;
+    --branco: #FFFFFF;
+
+    --verde-hover: #8ce6e3;
+    --cancelar-hover: #aec9e6;
+    --azul-claro-hover: #72a1d2;
+
+
+
+    --fonte-principal: 'Roboto', sans-serif;
+}

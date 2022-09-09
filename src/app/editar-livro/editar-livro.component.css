@@ -1,0 +1,64 @@
+table {
+    width: 95%;
+    margin: 1em auto;
+}
+
+legend {
+    background-color: var(--cinza-claro);
+    font-size: 32px;
+    color: var(--azul-claro);
+    font-weight: 700;
+    border-bottom: none;
+}
+
+
+th {
+    background-color: var(--azul-escuro);
+    color: var(--verde-agua);
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 20px;
+    padding: 25px 20px;
+    border: none !important;
+    border: 2px solid var(--branco)!important;
+}
+
+
+td {
+    background-color: var(--cinza);
+    color: var(--azul-claro);
+    font-family: var(--fonte-principal);
+    font-size: 20px;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.25));
+}
+
+input {
+    border: none;
+    width: 100%;
+    padding: 10px 10px;
+}
+
+.subtitulo {
+    font-size: 32px;
+    color: var(--azul-claro);
+    font-weight: 700;
+}
+
+button {
+    width: 5%;
+    border-radius: 16px;
+    border: none;
+    background-color: var(--verde-agua);
+    color: var(--azul-escuro);
+    filter: drop-shadow(16px 16px 10px rgba(0, 0, 0, 0.25));
+}
+
+i {
+    font-size: 1em;
+    color: var(--azul-escuro);
+}
+
+.btn-deletar {
+    background-color: var(--btn-azul);
+}
+

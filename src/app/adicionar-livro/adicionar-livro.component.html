@@ -5,8 +5,8 @@
             <label for="tituloLivro" id="labelTitulo">Titulo:</label>
             <input type="text" id="tituloLivro" name="titulo" placeholder="Titulo do Livro" formControlName="titulo">
             <br>
-            <label for="descrLivro" id="labelDescr">DescriÃ§Ã£o:</label>
-            <input type="text" id="descrLivro" name="descricao" placeholder="DescriÃ§Ã£o do Livro" formControlName="descr">
+            <label for="descrLivro" id="labelDescr">Descrição:</label>
+            <input type="text" id="descrLivro" name="descricao" placeholder="Descrição do Livro" formControlName="descr">
             <br>
             <label for="autorLivro" id="labelAutor">Autor:</label>
             <input type="text" id="autorLivro" name="autor" placeholder="Autor do Livro" formControlName="autor">
@@ -14,8 +14,10 @@
             <label for="editoraLivro" id="labelEditora">Editora:</label>
             <input type="text" id="editoraLivro" name="editora" placeholder="Editora do Livro" formControlName="editora">
             <br>
-            <button type="submit" (click)="onSubmit()">Adicionar Livro</button>
-            <button type="button" (click)="onCancel()">Cancelar</button>
+            <div class="botoes">
+                <button type="submit" (click)="onSubmit()">Adicionar Livro</button>
+                <button type="button" (click)="onCancel()" class="btn-cancelar">Cancelar</button>
+            </div>
         </fieldset>
     </form> 
 </div>

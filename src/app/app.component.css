@@ -10,7 +10,7 @@
 }
 #header {
     padding: 30px 0;
-    height: 92px;
+    height: 110px;
     position: fixed;
     left: 0;
     top: 0;
@@ -23,17 +23,27 @@
 #header #logo h1 {
     font-size: 34px;
     margin: 0;
-    padding: 0;
+    padding-top: 0;
     line-height: 1;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fonte-principal);
     font-weight: 700;
     letter-spacing: 3px;
 }
 #header #logo h1 a, #header #logo h1 a:hover {
-    color: #000;
+    color: var(--azul-escuro);
     padding-left: 10px;
-    border-left: 4px solid #1853d2;
+    border-left: 4px solid var(--azul-claro);
 }
+
+.grupo-3 {
+    font-family: var(--fonte-principal);
+    color: var(--azul-claro);
+    font-size: 20px;
+    margin: -13px 0 0 0;
+    padding-left: 10px;
+    border-left: 4px solid var(--azul-claro);
+}
+
 #nav-menu-container {
     float: right;
     margin: 0;
@@ -67,7 +77,7 @@
     text-decoration: none;
     display: inline-block;
     color: #000;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fonte-principal);
     font-weight: 700;
     font-size: 13px;
     text-transform: uppercase;
@@ -158,6 +168,12 @@ body.mobile-nav-active #mobile-nav {
 .menu-has-children ul
 {display: none;}
 
+.subtitulo {
+    font-size: 47px;
+    color: var(--azul-escuro);
+    font-weight: 700;
+    font-family: var(--fonte-principal);
+}
 
 @media (max-width: 768px){
 #nav-menu-container {
@@ -246,15 +262,15 @@ section .section-title {
 }
 
 .logoCog{
-   
     border-radius: 2px;  
     width: 60px;
+    margin: -3px 7px 10px 5px;
     
 }
 
-.addlivroo{
+/* .addlivroo{
     padding-left: 0;
     border-left: transparent;
     padding-bottom: 0px;
     margin-bottom: 10px;
-}
+} */

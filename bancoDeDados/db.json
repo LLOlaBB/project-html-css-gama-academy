@@ -1,18 +1,25 @@
 {
   "livros": [
     {
-      "id": 1,
-      "titulo": "1 teste editar 1",
-      "descr": "1 tes ed 1",
-      "autor": "1 tes ed 1",
-      "editora": "1 tes ed 1"
+      "titulo": "Laura ",
+      "descr": "Ela sabe tudo de back-end",
+      "autor": "Laura",
+      "editora": "Abril",
+      "id": 4
     },
     {
-      "titulo": "gskg",
-      "descr": "sfksk",
-      "autor": "gkfsk",
-      "editora": "fgskgk",
-      "id": 2
+      "titulo": "Guilherme",
+      "descr": "Ele fez o header e o footer",
+      "autor": "Gui",
+      "editora": "Abril",
+      "id": 5
+    },
+    {
+      "titulo": "Juliana Mota",
+      "descr": "Ela estilizou o main e as tabelas",
+      "autor": "Ju Mota",
+      "editora": "Abril",
+      "id": 6
     }
   ]
 }
